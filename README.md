@@ -1,1 +1,1 @@
-# Text-Utils
+TextUtils is a simple yet powerful utility for processing and manipulating text. It provides various features such as text formatting, case conversion, whitespace removal, word and character counting, and more. Whether you need to clean up text data, analyze word frequency, or perform quick transformations, TextUtils offers an easy-to-use solution. Designed for efficiency and ease of use, it is suitable for developers, writers, and anyone who frequently works with text.
