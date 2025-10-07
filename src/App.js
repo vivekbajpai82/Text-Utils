@@ -6,9 +6,8 @@ import About from './About';
 import TextForm from './TextForm';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+  Routes,
+  Route
 } from "react-router-dom";
 
 function App() {
@@ -43,14 +42,10 @@ function App() {
         <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
         <Alert alert={alert}/>
         <div className="container my-3">
-          <Switch>
-            <Route exact path="/about">
-              <About  mode={mode}/>
-            </Route>
-            <Route exact path="/">
-              <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>  
-            </Route> 
-          </Switch>  
+          <Routes>
+            <Route exact path="/about" element={<About mode={mode}/>} />
+            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>} />
+          </Routes>  
         </div>
       </Router>
     </>
